@@ -1,6 +1,5 @@
 
-
-using_push(colors_in_the_rainbow,'violet')
+using_push(colors_in_the_rainbow,"violet")
 
 using_unshift(bouroughs_in_nyc,"Staten Island")
 
