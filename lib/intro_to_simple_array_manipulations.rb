@@ -1,12 +1,10 @@
-colors_in_the_rainbow = ["red", "orange", "yellow", "green", "blue", "indigo"]
-    next_color = "violet"
+
 using_push(colors_in_the_rainbow, next_color)
 
-bouroughs_in_nyc = ["Brooklyn", "Queens", "Manhattan", "Bronx"]
-    new_neighborhood = "Staten Island"
+
 using_unshift(bouroughs_in_nyc,new_neighborhood)
 
-ontinents = ["Africa", "Asia", "Europe", "North America", "South America", "Oceania", "Antarctica"]
+
 using_pop(continents)
 
 
