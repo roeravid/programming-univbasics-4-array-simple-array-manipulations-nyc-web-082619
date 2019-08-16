@@ -2,127 +2,23 @@
 
 using_push(colors_in_the_rainbow,'violet')
 
------------=begin
-
-describe "using_unshift" do 
-  before(:each) do 
-    bouroughs_in_nyc = ["Brooklyn", "Queens", "Manhattan", "Bronx"]
-    @new_neighborhood = "Staten Island"
-    @updated_array = using_unshift(bouroughs_in_nyc, @new_neighborhood)
-  end
-  
-  it "takes in two arguments, an array and a string and adds that string to the front of the array using the unshift method" do
-    expect(@updated_array.first).to eq(@new_neighborhood)
-  end
-
-  it "increases the length of the array" do 
-    expect(@updated_array.size).to eq(5)
-  end
-end
-
------------=end
-
 using_unshift(bouroughs_in_nyc,"Staten Island")
 
------------=begin
-
-describe "using_pop" do
-  before(:each) do 
-    @continents = ["Africa", "Asia", "Europe", "North America", "South America", "Oceania", "Antarctica"]
-    @deleted_string = using_pop(@continents)
-  end
-  it "takes in argument of an array and uses the pop method to remove the last element from the array and return that element" do 
-    expect(@deleted_string).to eq("Antarctica")
-  end
-
-  it "decreases the length of the array by 1" do 
-    expect(@continents.size).to eq(6)
-  end
-end
-
------------=end
 
 using_pop(continents)
 
------------=begin
-
-describe "pop_with_args" do
-  before(:each) do 
-    @dog_breeds = ["Great Dane", "Golden Retriever", "Chihuahua", "Shiba Inu"]
-    @small_dogs = pop_with_args(@dog_breeds)
-  end 
-  it "takes in an argument of an array and uses the pop method with an argument of 2 to remove the last two array items and return them" do 
-    expect(@small_dogs).to eq(["Chihuahua", "Shiba Inu"])
-  end 
-
-  it "decreases the length of the array by 2" do
-    expect(@dog_breeds.size).to eq(2)
-  end
-end
-
------------=end
 
 pop_with_args(small_dogs)
 
------------=begin
 
-describe "using_shift" do 
-  before(:each) do 
-    @my_favorite_cities = ["Lagos", "Cape Town", "Nairobi", "San Francisco", "Gaborone", "New York", "Berlin", "London"]
-    @im_so_over_this_city = using_shift(@my_favorite_cities)
-  end
-  it "takes in an argument of an array and uses the shift method to remove the first item and return it" do 
-    expect(@im_so_over_this_city).to eq("Lagos")
-  end
-
-  it "decreases the length of the array by 1" do 
-    expect(@my_favorite_cities.size).to eq(7)
-  end
-end
-
------------=end
 
 using_shift(my_favorite_cities)
 
------------=begin
 
-describe "shift_with_args" do 
-  before(:each) do 
-    @ice_cream_brands = ["Blue Bell Creameries", "Ben & Jerry's", "Baskin Robbins", "Braum's", "Breyer's"]
-    @brands_removed = shift_with_args(@ice_cream_brands)
-  end
-  
-  it "takes in an argument of an array and uses the shift method with an argument of 2 to remove and return the first 2 items from the array" do 
-    expect(@brands_removed).to eq(["Blue Bell Creameries", "Ben & Jerry's"])
-  end
-
-  it "decreases the length of the array by 2" do 
-    expect(@brands_removed.size).to eq(2)
-  end
-end
-
------------=end
 
 shift_with_args(ice_cream_brands)
 
------------=begin
 
-describe "using_concat" do 
-  before(:each) do 
-    @my_favorite_things = ["raindrops on roses", "whiskers on kittens"]
-    more_favs = ["sports cars", "flatiron school"]
-    @all_my_favs = using_concat(@my_favorite_things, more_favs)
-  end
-   it "takes in two arguments of two different arrays and uses the concat method to add the contents of the second array to the first" do 
-    expect(@all_my_favs).to eq(["raindrops on roses", "whiskers on kittens", "sports cars", "flatiron school"])
-   end
-
-   it "increases the length of the first array" do 
-    expect(@my_favorite_things.length).to be > 2
-   end
-end
-
------------=end
 
 using_concat(my_favorite_things,all_my_favs)
 
