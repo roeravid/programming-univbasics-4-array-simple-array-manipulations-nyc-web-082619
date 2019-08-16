@@ -9,11 +9,11 @@ describe "using_push" do
     end
 end
 
-=end 
+-----------=end 
 
+using_push(colors_in_the_rainbow,'violet')
 
-
-=begin
+-----------=begin
 
 describe "using_unshift" do 
   before(:each) do 
@@ -31,9 +31,12 @@ describe "using_unshift" do
   end
 end
 
-=end
+-----------=end
 
-=begin
+using_unshift(bouroughs_in_nyc,"Staten Island")
+
+-----------=begin
+
 describe "using_pop" do
   before(:each) do 
     @continents = ["Africa", "Asia", "Europe", "North America", "South America", "Oceania", "Antarctica"]
@@ -48,9 +51,11 @@ describe "using_pop" do
   end
 end
 
-=end
+-----------=end
 
-=begin
+using_pop(continents)
+
+-----------=begin
 
 describe "pop_with_args" do
   before(:each) do 
@@ -66,9 +71,12 @@ describe "pop_with_args" do
   end
 end
 
-=end
+-----------=end
 
-=begin
+pop_with_args(small_dogs)
+
+-----------=begin
+
 describe "using_shift" do 
   before(:each) do 
     @my_favorite_cities = ["Lagos", "Cape Town", "Nairobi", "San Francisco", "Gaborone", "New York", "Berlin", "London"]
@@ -83,9 +91,11 @@ describe "using_shift" do
   end
 end
 
-=end
+-----------=end
 
-=begin
+using_shift(my_favorite_cities)
+
+-----------=begin
 
 describe "shift_with_args" do 
   before(:each) do 
@@ -102,9 +112,11 @@ describe "shift_with_args" do
   end
 end
 
-=end
+-----------=end
 
-=begin
+shift_with_args(ice_cream_brands)
+
+-----------=begin
 
 describe "using_concat" do 
   before(:each) do 
@@ -121,9 +133,11 @@ describe "using_concat" do
    end
 end
 
-=end
+-----------=end
 
-=begin
+using_concat(my_favorite_things,all_my_favs)
+
+-----------=begin
 
 describe "using_insert" do 
   before(:each) do 
@@ -141,9 +155,11 @@ describe "using_insert" do
   end
 end
 
-=end
+-----------=end
 
-=begin
+using_insert(list_of_programming_languages, "Python")
+
+-----------=begin
 
 describe "using_uniq" do 
   it "takes in an argument of an array and uses the uniq method to remove any duplicate items" do
@@ -153,9 +169,11 @@ describe "using_uniq" do
   end
 end
 
-=end
+-----------=end
 
-=begin
+using_uniq(haircuts)
+
+-----------=begin
 
 describe "using_flatten" do 
   it "takes in an argument of an array that contains other arrays and uses the flatten method to return an array of strings" do 
@@ -165,9 +183,11 @@ describe "using_flatten" do
   end
 end
 
-=end
+-----------=end
 
-=begin
+using_flatten(instruments)
+
+-----------=begin
 
 describe "using_delete" do 
   it "takes in two arguments, an array and a string, and uses the delete method to remove any items from the array that are equal to that string" do
@@ -179,6 +199,8 @@ end
 
 -----------=end
 
+using_delete(instructors, "Steven")
+
 -----------=begin
 
 describe "using_delete_at" do 
@@ -189,5 +211,7 @@ describe "using_delete_at" do
   end
 end
 
-=end
+-----------=end
+
+using_delete_at(famous_robots, 2)
 
