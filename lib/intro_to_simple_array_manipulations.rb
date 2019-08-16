@@ -1,4 +1,5 @@
 =begin
+
 describe "using_push" do 
   it "takes in two arguments, an array and a string and adds that string to the end of the array using the push method" do 
     colors_in_the_rainbow = ["red", "orange", "yellow", "green", "blue", "indigo"]
@@ -12,6 +13,7 @@ end
 
 
 
+=begin
 
 describe "using_unshift" do 
   before(:each) do 
@@ -29,6 +31,9 @@ describe "using_unshift" do
   end
 end
 
+=end
+
+=begin
 describe "using_pop" do
   before(:each) do 
     @continents = ["Africa", "Asia", "Europe", "North America", "South America", "Oceania", "Antarctica"]
@@ -42,6 +47,10 @@ describe "using_pop" do
     expect(@continents.size).to eq(6)
   end
 end
+
+=end
+
+=begin
 
 describe "pop_with_args" do
   before(:each) do 
@@ -57,6 +66,9 @@ describe "pop_with_args" do
   end
 end
 
+=end
+
+=begin
 describe "using_shift" do 
   before(:each) do 
     @my_favorite_cities = ["Lagos", "Cape Town", "Nairobi", "San Francisco", "Gaborone", "New York", "Berlin", "London"]
@@ -70,6 +82,10 @@ describe "using_shift" do
     expect(@my_favorite_cities.size).to eq(7)
   end
 end
+
+=end
+
+=begin
 
 describe "shift_with_args" do 
   before(:each) do 
@@ -86,6 +102,10 @@ describe "shift_with_args" do
   end
 end
 
+=end
+
+=begin
+
 describe "using_concat" do 
   before(:each) do 
     @my_favorite_things = ["raindrops on roses", "whiskers on kittens"]
@@ -100,6 +120,10 @@ describe "using_concat" do
     expect(@my_favorite_things.length).to be > 2
    end
 end
+
+=end
+
+=begin
 
 describe "using_insert" do 
   before(:each) do 
@@ -117,6 +141,10 @@ describe "using_insert" do
   end
 end
 
+=end
+
+=begin
+
 describe "using_uniq" do 
   it "takes in an argument of an array and uses the uniq method to remove any duplicate items" do
     haircuts = ["Pixie", "Bob", "Mohawk", "Crew Cut", "Linka", "Wheeler", "Bob"]
@@ -124,6 +152,10 @@ describe "using_uniq" do
     expect(new_array).to eq(["Pixie", "Bob", "Mohawk", "Crew Cut", "Linka", "Wheeler"])
   end
 end
+
+=end
+
+=begin
 
 describe "using_flatten" do 
   it "takes in an argument of an array that contains other arrays and uses the flatten method to return an array of strings" do 
@@ -133,6 +165,9 @@ describe "using_flatten" do
   end
 end
 
+=end
+
+=begin
 
 describe "using_delete" do 
   it "takes in two arguments, an array and a string, and uses the delete method to remove any items from the array that are equal to that string" do
@@ -142,6 +177,10 @@ describe "using_delete" do
   end
 end
 
+-----------=end
+
+-----------=begin
+
 describe "using_delete_at" do 
   it "takes in two arguments, an array and an integer and deletes the element at the index of the array that is equal to that integer" do 
     famous_robots = ["Johnny 5", "R2D2", "Robocop"]
@@ -149,3 +188,6 @@ describe "using_delete_at" do
     expect(deleted_robot).to eq("Robocop")
   end
 end
+
+=end
+
